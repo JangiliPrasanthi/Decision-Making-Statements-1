@@ -1,0 +1,274 @@
+1.Write a python program to read the given input from the user and to print the given output.
+  Sample Input1:
+  BLUE
+  Sample Output1
+  It is Dawn  
+  Sample Input2:
+  GREEN
+  Sample Output2:
+  Invalid Input 
+  CODE:
+  a=input()
+  if a=="BLUE":
+  	print("It is Dawn")
+  elif a=="RED":
+  	print("It is Dusk")
+  else:
+  	print("Invalid Input")
+
+2.Write a python program to read the given input from the user and to print the given output.
+  Sample Input1:
+  sunny
+  Sample Output1:
+  Yes I can drive :)
+  Sample Input2:
+  misty
+  Sample Output2:
+  Sorry invalid input :|
+  Sample Input3:
+  rainy
+  Sample Output3:
+  No I cant drive :(
+  CODE:
+  a=input()
+  if a=="sunny":
+  	print("Yes I can drive :)")
+  elif a=="rainy":
+  	print("No I cant drive :(")
+  else:
+  	print("Sorry invalid input :|")
+
+3.Write a python program to read the given input from the user and to print the given output.
+  Sample Input:
+  100
+  25
+  16:00
+  10:00
+  Sample Output:
+  Yes
+  CODE:
+  d=int(input())
+  s=int(input())
+  ti=input()
+  tj=input()
+  t=d/s
+  a=int(ti[0:2])
+  b=int(tj[0:2])
+  c=a-b
+  if tj<ti and c>t:
+  	print("Yes")
+  elif tj<ti and c<t:
+  	print("No")
+  else:
+  	print("Invalid Input")
+
+4.Write a python program to read the given input from the user and to print the given output.
+  Sample Input:
+  100
+  25
+  5
+  Sample Output:
+  Yes
+  CODE:
+  a=int(input())
+  b=int(input())
+  c=int(input())
+  d=a/b
+  if d<c and b>0:
+  	print("Yes")
+  elif d>c:
+  	print("No")
+  else:
+  	print("Invalid Input")
+
+5.Write a python program to read the given input from the user and to print the given output.
+  Sample Input1:
+  10
+  15
+  10
+  12
+  250
+  Sample Output2:
+  Monthly Pass
+  Sample Input2:
+  20
+  20
+  100
+  110
+  5000
+  Sample Output2:
+  One way pass  +  Two way pass
+  CODE:
+  a=int(input())
+  b=int(input())
+  c=int(input())
+  d=int(input())
+  e=int(input())
+  f=(a*c)+(b*d)
+  if e<=f and c<d:
+  	print("Monthly Pass")
+  elif e>f and c<d:
+  	print("One way pass + Two way pass")
+  else:
+  	print("Invalid Input")
+
+6.Write a python program to read the given input from the user and to print the given output.
+  Sample Input1:
+  yes
+  yes
+  yes
+  Sample Output2:
+  Yes I can drive  
+  Sample Input2::
+  No
+  Yes
+  Yes
+  Sample Output2:
+  Invalid Input
+  CODE:
+  a=input()
+  b=input()
+  c=input()
+  if a=="yes" and b=="yes" and c=="yes":
+  	print("Yes I can drive")
+  elif a=="no" and b=="no" and c=="no":
+  	print("No I can't drive")
+  else:
+  	print("Invalid Input")
+
+7.Write a python program to read the given input from the user and to print the given output.
+  Sample Input:
+  100
+  200
+  25
+  B
+  Sample Output:
+  4.00
+  4.00
+  CODE:
+  a=int(input())
+  b=int(input())
+  c=float(input())
+  d=input()
+  if d=="A":
+  	e=b/c
+  	g=e-e
+    	print("%.2f"%e)
+    	print("%.2f"%g)
+  else:
+      e=a/c
+      f=(b-a)/c
+      print("%.2f"%e)
+      print("%.2f"%f)
+
+8.Write a python program to read the given input from the user and to print the given output.
+  Sample Input1:
+  25
+  75
+  100
+  3
+  500
+  Sample Output1:
+  Speed
+  Sample Input2:
+  25
+  75
+  100
+  25
+  80
+  Sample Output2:
+  Ordinary
+  CODE:
+  a=float(input())
+  b=float(input())
+  c=float(input())
+  d=int(input())
+  e=float(input())
+  f=d/a
+  g=f*b
+  h=f*c
+  if e<=g or e>=h:
+  	print("Speed")
+  else:
+      print("Ordinary")
+
+9.Write a python program to read the given input from the user and to print the given output.
+  Sample Input:
+  33 
+  35 
+  40 
+  31 
+  Sample Output:
+  Front-left : Untouched 
+  Rear-left : Deflate 
+  Rear-right : Deflate 
+  Front-right : Inflate 
+  CODE:
+  a=int(input())
+  b=int(input())
+  c=int(input())
+  d=int(input())
+
+  if a==33:
+  	print("Front-left : Untouched")
+  elif a<33:
+      print("Front-left : Inflate")
+  else:
+      print("Front-left : Deflate")
+
+  if b==32:
+      print("Rear-left : Untouched")
+  elif b<32:
+      print("Rear-left : Inflate")
+  else:
+      print("Rear-left : Deflate")
+    
+  if c==32:
+      print("Rear-right : Untouched")
+  elif c<32:
+      print("Rear-right : Inflate")
+  else:
+      print("Rear-right : Deflate")
+    
+  if d==33:
+      print("Front-right : Untouched")
+  elif d<33:
+      print("Front-right : Inflate")
+  else:
+      print("Front-right : Deflate")
+
+10.Write a python program to read the given input from the user and to print the given output.
+   Sample Input1:
+   red
+   Sample Output2:
+   Stop
+   Sample Input2:
+   blue
+   Sample Output2:
+   Invalid Input
+   Sample Input3:
+   Blue
+   Sample Output3:
+   Invalid Input
+   CODE:
+   a=input()
+   if a=="red":
+   	print("Stop")
+   elif a=="Red":
+      print("Stop")
+   elif a=="yellow":
+      print("Get Ready")
+   elif a=="Yellow":
+      print("Get Ready")
+   elif a=="green":
+      print("Go")
+   elif a=="Green":
+      print("Go")
+   else:
+      print("Invalid Input")
+    
+    
+    
+
+
+  
